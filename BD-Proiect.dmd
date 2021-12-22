@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="BD-Proiect" id="B0855C3B-255B-EB6F-8726-BBDC9EA6F089" version="3.5">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 14:50:53 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>B0855C3B-255B-EB6F-8726-BBDC9EA6F089</designId>
+</OSDM_Design>
