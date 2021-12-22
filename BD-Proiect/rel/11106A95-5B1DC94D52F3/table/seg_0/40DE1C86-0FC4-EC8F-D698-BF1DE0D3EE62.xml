@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="40DE1C86-0FC4-EC8F-D698-BF1DE0D3EE62" name="furnizori">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>D270693D-8A65-1D05-ABD5-0DCD2EC06B57</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_furnizor" id="4DDD2A58-F278-DBB0-63D4-37EFE4598EAD">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>CF60E512-30E1-F810-889E-997357C23FEA</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="denumire_furnizor" id="260B10F3-E7DD-CE05-71FA-62C8C146A461">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>170CB517-C80D-73F5-9EDF-8A4805A4977D</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<constraintName>furnizori_denum_furnizor_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="(length(denumire_furnizor) &gt; 3 ) AND  (REGEXP_LIKE ( denumire_furnizor, &apos;^[A-Za-z ]+$&apos;))"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="115FAD6E-06AF-649D-98A9-2115F171CDB3" name="furnizori_PK">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>9DC09AB2-0456-81D8-C58B-518D9BB4218A</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DDD2A58-F278-DBB0-63D4-37EFE4598EAD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D8A0F663-67CB-0881-5325-EF7F3D8F3648" name="furnizori_denumire_furnizor_UN">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>E3CF8776-ED76-E334-4126-BA010F13E898</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="260B10F3-E7DD-CE05-71FA-62C8C146A461"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

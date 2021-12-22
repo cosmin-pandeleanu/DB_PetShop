@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6B39BEAC-2FA1-A8D5-577E-5A6E00CEFF83" name="vanzari">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nr_card" id="51524633-C4F8-DADF-7B20-E936FC4E3263">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="054D5DA3-FAC6-CB05-7E18-21C063FE1E67" referredColumn="098982C2-9AD0-EDF6-BB91-73059F1E374D"/>
+</associations>
+</Column>
+<Column name="id_produs" id="A2214DB3-8E5C-07ED-72F1-3B2FC41BC2C9">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BC9D4D4D-C544-0A92-D915-06FD4B733D7A" referredColumn="786F2024-5E54-C4D5-B4D8-0954FFF6B77D"/>
+</associations>
+</Column>
+<Column name="nr_bon" id="8ED71D2E-40DB-4709-5B67-33F5A1906DDC">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>377D8C06-D037-FB08-4428-DE24ED08081E</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="cantitate" id="A4F97E89-262D-756D-4621-758C7615D7A5">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>3E50E4DD-DBE4-0533-5BD7-F7C2E97FE3E9</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+<Column name="data_achizitiei" id="56E30DC8-8882-B592-632E-61673247C74E">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>7AB616A4-6ABD-0CCD-FC61-81D60DFE941A</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D1BEE486-E600-67F8-10C7-CEBB9A8B787D" name="vanzari_PK">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8ED71D2E-40DB-4709-5B67-33F5A1906DDC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EDAC09A5-F36A-A78C-BBC4-1C9A676472A3" name="vanzari_clienti_FK">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>5951EC11-BCB4-31CE-BCF2-567DCB73A2D9</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51524633-C4F8-DADF-7B20-E936FC4E3263"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6AC53105-0C50-B9F4-813B-D65B89D87F3C" name="vanzari_produse_FK">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>5951EC11-BCB4-31CE-BCF2-567DCB73A2D9</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2214DB3-8E5C-07ED-72F1-3B2FC41BC2C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="clienti_detalii" directorySegmentName="seg_0" id="2E538EAF-C027-7780-AF15-85491C6D7EEE">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:18:22 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="78FAB28D-9B89-9E04-4E96-B3B0E14A15C0" value="true"/>
+</engineerTo>
+<sourcePk>DE365157-95ED-79D8-C2BD-58DBBECEE937</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>au</nameOnSource>
+<nameOnTarget>sunt ale</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>52083505-D242-2F91-0FB9-6E5BCB4279D5</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>240B5B48-5A4C-0E9F-DA15-4437BB77AF39</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

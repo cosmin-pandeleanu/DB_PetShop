@@ -1,0 +1,162 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8E127BF8-AFFC-4251-09D7-1B502D51CCB6" name="produse">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>51243266-2B8D-138B-7F90-5A6D75F2FD17</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_produs" id="786F2024-5E54-C4D5-B4D8-0954FFF6B77D">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>1354CF6A-D1C1-4265-9AA5-C2760FFB4E8B</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>1000</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="denumire_produs" id="EDD0BED9-D747-053A-B405-B462D74A4E83">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>68CA0521-DB91-D3B5-1DC0-53C87F8453E3</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<constraintName>produse_denumire_produs_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(denumire_produs) &gt; 2"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stoc" id="A8DBD429-0133-BE54-C85D-7D9CA7AE1243">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>2C696EA4-3A1E-BC14-98D4-4E2A0254AA0F</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<constraintName>produse_stoc_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="stoc &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pret" id="FCD1C29B-A653-6837-0072-A3A1D8A5D085">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>40FDFC1C-62FA-2EA2-F3C6-46012FD56984</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<constraintName>produse_pret_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="pret &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="um" id="8763FA7A-B22A-C35A-1EBB-5380B3C968CF">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>4826B058-6441-287E-A21B-C5D03F6B76E9</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<listOfValues>
+<valueDef value="L" description=""/>
+<valueDef value="buc" description=""/>
+<valueDef value="g" description=""/>
+<valueDef value="kg" description=""/>
+<valueDef value="mL" description=""/>
+</listOfValues>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tip" id="77477E5A-2984-5835-173B-CA8793ADE57D">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>BA904E4E-DE17-04DF-2A98-86CDFEB2F0EF</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7FF02588-CEB5-7CE1-4DCF-D358D06D2C1F" referredColumn="E24BAB0C-9597-A739-6203-4762419E223F"/>
+</associations>
+</Column>
+<Column name="id_furnizor" id="82DCA5B9-6EDE-BF4C-3C25-F896567F125C">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>FBC19CFE-4F1A-A231-6E06-0E008E284AED</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4EC0FB0F-665C-1EE3-781F-060CA575CD24" referredColumn="4DDD2A58-F278-DBB0-63D4-37EFE4598EAD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9C84CCA8-DCA9-E70A-EE5F-43BA70F1D7B4" name="produse_PK">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>3CFBE3DA-F05E-8DC5-DA68-F014C60282A2</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="786F2024-5E54-C4D5-B4D8-0954FFF6B77D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0647295-8640-CCD0-6986-6BB81F97DCEA" name="produse_furnizori_FK">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>0BEE9065-1D7A-3F47-4DAF-184CF00F1DD2</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82DCA5B9-6EDE-BF4C-3C25-F896567F125C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2EB15950-0CDA-B0F9-A360-76C8BCB673E2" name="produse_tipuri_produse_FK">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>659E992F-BFD0-EFD7-D883-1070E061105B</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77477E5A-2984-5835-173B-CA8793ADE57D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

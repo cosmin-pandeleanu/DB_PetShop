@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="categorie" directorySegmentName="seg_0" id="072407EC-387A-67A9-1CDD-3F37A8B8BAF4">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-28 09:41:08 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="78FAB28D-9B89-9E04-4E96-B3B0E14A15C0" value="true"/>
+</engineerTo>
+<sourcePk>8F7D24C2-128D-8300-3EFD-FB669D2640A0</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>au</nameOnSource>
+<nameOnTarget>sunt incadrate</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>012FEA14-3BC7-A11B-95D3-D8F9CB64811B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>51243266-2B8D-138B-7F90-5A6D75F2FD17</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

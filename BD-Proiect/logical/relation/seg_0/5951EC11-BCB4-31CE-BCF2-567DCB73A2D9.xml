@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="vanzari" directorySegmentName="seg_0" id="5951EC11-BCB4-31CE-BCF2-567DCB73A2D9">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:29:03 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="78FAB28D-9B89-9E04-4E96-B3B0E14A15C0" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>cumpara</nameOnSource>
+<nameOnTarget>sunt cumparate de</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>52083505-D242-2F91-0FB9-6E5BCB4279D5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>51243266-2B8D-138B-7F90-5A6D75F2FD17</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="nr_bon" id="377D8C06-D037-FB08-4428-DE24ED08081E">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:29:39 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="78FAB28D-9B89-9E04-4E96-B3B0E14A15C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+</attribute>
+<attribute name="cantitate" id="3E50E4DD-DBE4-0533-5BD7-F7C2E97FE3E9">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:30:08 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="78FAB28D-9B89-9E04-4E96-B3B0E14A15C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+</attribute>
+<attribute name="data_achizitiei" id="7AB616A4-6ABD-0CCD-FC61-81D60DFE941A">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:30:47 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="78FAB28D-9B89-9E04-4E96-B3B0E14A15C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

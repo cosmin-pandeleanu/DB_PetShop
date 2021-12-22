@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3D66F5BB-2C34-5A3B-0CA1-8347A8C9738E" name="detalii_clienti">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>240B5B48-5A4C-0E9F-DA15-4437BB77AF39</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nr_card" id="6AB8AF37-D028-9661-69A1-36B9AD4ABE36">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>98A6C99C-D0E6-7B68-2D94-34D8B67A8ADE</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E2529718-549B-19C2-EF31-2B5BCEA054B5" referredColumn="098982C2-9AD0-EDF6-BB91-73059F1E374D"/>
+</associations>
+</Column>
+<Column name="e-mail" id="691F7F2B-CF7B-7793-1064-2DCC7B1BFBBC">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>67828A97-58AA-025C-617C-0A809ED80E96</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<constraintName>datelii_clienti_e-mail_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(&quot;e-mail&quot;, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_nasterii" id="E3A27808-BCA9-F196-09A2-35CF26B03445">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>4452CED0-22AD-4458-C5D7-3B3C12BAD4A4</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gen" id="1307040F-65B0-2545-D5CA-C63E71F2F1C6">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>4E52E088-B64C-0608-4D21-D20297DE42AC</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="adresa" id="A3D898F2-078F-F5E3-ECF3-5A394DFE4F77">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>53BD3313-9C93-22CA-C6DA-DF3B1A8877FB</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oras" id="BCC44B1D-5704-524B-68C8-04F1E679BE63">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>99E7E264-9CA8-AE9B-EE89-5C8802963494</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E6A960EA-372F-9F91-7A4D-D625A96AB0D7" name="detalii_clienti_e-mail_UN">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>F9C20D1B-46E4-3EC4-61FE-AC4719BC1C30</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="691F7F2B-CF7B-7793-1064-2DCC7B1BFBBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4217A978-4AD7-FFF4-1610-1B19E999A598" name="detalii_clienti__IDX">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>2E538EAF-C027-7780-AF15-85491C6D7EEE</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="6AB8AF37-D028-9661-69A1-36B9AD4ABE36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3E4E204-5468-1892-C2E2-2D2902CDD9D4" name="detalii_clienti_clienti_FK">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>2E538EAF-C027-7780-AF15-85491C6D7EEE</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6AB8AF37-D028-9661-69A1-36B9AD4ABE36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

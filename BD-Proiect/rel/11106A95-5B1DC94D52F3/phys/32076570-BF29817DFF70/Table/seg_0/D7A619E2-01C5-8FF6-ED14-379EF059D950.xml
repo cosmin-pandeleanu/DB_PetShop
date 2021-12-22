@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="clienti" directorySegmentName="seg_0" id="D7A619E2-01C5-8FF6-ED14-379EF059D950">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:14:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="nr_card" id="098982C2-9AD0-EDF6-BB91-73059F1E374D">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:14:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nume_client" id="E0204570-9339-44FE-2DF8-6CD8D53192C4">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:14:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="clienti_PK" id="7742DF2E-EC2E-18FD-9F87-5C2D0FDCFF3C">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:14:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="clienti_nume_client_UN" id="B4004CE5-4042-1C66-E608-A7A253AB96D0">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:14:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

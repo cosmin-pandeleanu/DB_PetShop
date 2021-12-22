@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="tip" directorySegmentName="seg_0" id="659E992F-BFD0-EFD7-D883-1070E061105B">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:34:47 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="78FAB28D-9B89-9E04-4E96-B3B0E14A15C0" value="true"/>
+</engineerTo>
+<sourcePk>D3B82435-FD50-AD49-758C-E2F473B1ABE9</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>au</nameOnSource>
+<nameOnTarget>sunt de</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B8261E6D-AF0A-A9CB-CA96-4BE6384E1043</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>51243266-2B8D-138B-7F90-5A6D75F2FD17</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

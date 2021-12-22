@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E2529718-549B-19C2-EF31-2B5BCEA054B5" containerWithKeyObject="3D66F5BB-2C34-5A3B-0CA1-8347A8C9738E" localFKIndex="C3E4E204-5468-1892-C2E2-2D2902CDD9D4" name="detalii_clienti_clienti_FK">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>2E538EAF-C027-7780-AF15-85491C6D7EEE</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<referredTableLongName>clienti</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D7A619E2-01C5-8FF6-ED14-379EF059D950</referredTableID>
+<keyObject>7742DF2E-EC2E-18FD-9F87-5C2D0FDCFF3C</keyObject>
+<referredKeyID>7742DF2E-EC2E-18FD-9F87-5C2D0FDCFF3C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>nr_card</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

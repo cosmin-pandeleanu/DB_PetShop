@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="furnizari" directorySegmentName="seg_0" id="0BEE9065-1D7A-3F47-4DAF-184CF00F1DD2">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 08:09:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="78FAB28D-9B89-9E04-4E96-B3B0E14A15C0" value="true"/>
+</engineerTo>
+<sourcePk>9DC09AB2-0456-81D8-C58B-518D9BB4218A</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>furnizeaza</nameOnSource>
+<nameOnTarget>sunt furnizare</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D270693D-8A65-1D05-ABD5-0DCD2EC06B57</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>51243266-2B8D-138B-7F90-5A6D75F2FD17</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

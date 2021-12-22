@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CEBE2D9C-0619-CD03-BFD6-B41293BA86F0" name="tipuri_produse">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>B8261E6D-AF0A-A9CB-CA96-4BE6384E1043</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tip" id="E24BAB0C-9597-A739-6203-4762419E223F">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>85D3CDCF-760E-7870-78AF-C3415C9B7E0C</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="denumire_tip" id="7B71CEB1-44F6-EF82-F6E9-F6339D780664">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>D6262F98-C027-82AD-C5FE-7CFBB06DBC36</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<constraintName>tipuri_produse_denumire_tip_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="(length(denumire_tip) &gt; 3 ) AND  (REGEXP_LIKE ( denumire_tip, &apos;^[A-Za-z ]+$&apos;))"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="39095F4D-5D54-7CCD-E1A7-4F5A8C0D05D3" name="tipuri_produse_PK">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>D3B82435-FD50-AD49-758C-E2F473B1ABE9</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E24BAB0C-9597-A739-6203-4762419E223F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="93277092-D65B-6598-A52F-10F765FB6B6D" name="tipuri_produse_denumire_tip_UN">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>6FE75F2A-B3AF-EEB1-5595-1A80F81D83BF</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B71CEB1-44F6-EF82-F6E9-F6339D780664"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

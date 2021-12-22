@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D7A619E2-01C5-8FF6-ED14-379EF059D950" name="clienti">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>52083505-D242-2F91-0FB9-6E5BCB4279D5</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nr_card" id="098982C2-9AD0-EDF6-BB91-73059F1E374D">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>6258C8AD-8EEB-C2B7-FDBA-106F030B9F93</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume_client" id="E0204570-9339-44FE-2DF8-6CD8D53192C4">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>8D654E88-2E36-69C6-77F4-D49E2E8164EC</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<constraintName>clienti_nume_client_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="(length(nume_client) &gt; 3 ) AND  (REGEXP_LIKE ( nume_client, &apos;^[A-Za-z ]+$&apos;))"/>
+</checkConstraint>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7742DF2E-EC2E-18FD-9F87-5C2D0FDCFF3C" name="clienti_PK">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>DE365157-95ED-79D8-C2BD-58DBBECEE937</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="098982C2-9AD0-EDF6-BB91-73059F1E374D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4004CE5-4042-1C66-E608-A7A253AB96D0" name="clienti_nume_client_UN">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>D81DEDEE-6D62-2F9D-9040-17D8D3E5ECBB</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0204570-9339-44FE-2DF8-6CD8D53192C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

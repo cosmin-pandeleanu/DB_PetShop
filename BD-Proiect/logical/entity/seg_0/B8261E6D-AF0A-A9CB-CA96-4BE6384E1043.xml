@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B8261E6D-AF0A-A9CB-CA96-4BE6384E1043" name="tipuri_produse">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:33:10 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_tip" id="85D3CDCF-760E-7870-78AF-C3415C9B7E0C">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:33:31 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="denumire_tip" id="D6262F98-C027-82AD-C5FE-7CFBB06DBC36">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:33:44 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<constraintName>tipuri_produse_denumire_tip_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="(length(denumire_tip) &gt; 3 ) AND  (REGEXP_LIKE ( denumire_tip, &apos;^[A-Za-z ]+$&apos;))"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D3B82435-FD50-AD49-758C-E2F473B1ABE9" name="tipuri_produse PK">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:33:48 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>85D3CDCF-760E-7870-78AF-C3415C9B7E0C</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="6FE75F2A-B3AF-EEB1-5595-1A80F81D83BF" name="tipuri_prod_denum_prod_uk">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-09 12:26:29 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="false"/>
+</engineerTo>
+<newElementsIDs>D6262F98-C027-82AD-C5FE-7CFBB06DBC36</newElementsIDs>
+<usedAttributes>
+<attributeRef>D6262F98-C027-82AD-C5FE-7CFBB06DBC36</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

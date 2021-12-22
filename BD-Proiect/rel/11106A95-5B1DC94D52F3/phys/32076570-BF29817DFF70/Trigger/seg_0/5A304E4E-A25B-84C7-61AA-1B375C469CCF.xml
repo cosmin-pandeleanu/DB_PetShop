@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="trg_vanzari_BRIU" directorySegmentName="seg_0" id="5A304E4E-A25B-84C7-61AA-1B375C469CCF">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:23:11 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+	IF( :new.data_achizitiei <= TO_DATE('01.01.2000', 'DD.MM.YYYY') )
+	THEN
+		RAISE_APPLICATION_ERROR( -20001,
+		'Data invalida: ' || TO_CHAR( :new.data_achizitiei, 'DD.MM.YYYY HH24:MI:SS' ) || ' trebuie sa fie mai mare decat data deschiderii magazinului.' );
+END IF;
+END;
+]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>6B39BEAC-2FA1-A8D5-577E-5A6E00CEFF83</table>
+</TriggerOraclev10g>

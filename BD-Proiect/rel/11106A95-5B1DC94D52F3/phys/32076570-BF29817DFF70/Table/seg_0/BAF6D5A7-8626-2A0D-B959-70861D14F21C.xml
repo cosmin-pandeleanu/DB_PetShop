@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="categorii_animale" directorySegmentName="seg_0" id="BAF6D5A7-8626-2A0D-B959-70861D14F21C">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:14:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_categorie" id="194B1E54-2EAE-DFCE-73A7-5B2C2D41DF19">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:14:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="denumire_categorie" id="993AC5AA-5E2D-F17D-148F-874AE7127BF7">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:14:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="categorii_animale_PK" id="64447613-D169-8C74-24F9-459FBE7A4114">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:14:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="categorii_animale_denum_cat_UN" id="5357838D-2107-8A6C-B19B-D9FA22EB7EB1">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:14:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

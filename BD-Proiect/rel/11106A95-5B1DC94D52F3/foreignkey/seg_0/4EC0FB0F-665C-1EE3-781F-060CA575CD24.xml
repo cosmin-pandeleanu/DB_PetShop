@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4EC0FB0F-665C-1EE3-781F-060CA575CD24" containerWithKeyObject="8E127BF8-AFFC-4251-09D7-1B502D51CCB6" localFKIndex="B0647295-8640-CCD0-6986-6BB81F97DCEA" name="produse_furnizori_FK">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>0BEE9065-1D7A-3F47-4DAF-184CF00F1DD2</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<referredTableLongName>furnizori</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>40DE1C86-0FC4-EC8F-D698-BF1DE0D3EE62</referredTableID>
+<keyObject>115FAD6E-06AF-649D-98A9-2115F171CDB3</keyObject>
+<referredKeyID>115FAD6E-06AF-649D-98A9-2115F171CDB3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_furnizor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

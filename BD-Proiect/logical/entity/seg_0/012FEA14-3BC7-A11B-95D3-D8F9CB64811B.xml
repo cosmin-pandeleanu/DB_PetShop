@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="012FEA14-3BC7-A11B-95D3-D8F9CB64811B" name="categorii_animale">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-28 09:37:55 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_categorie" id="0CA94DDE-EDFD-1C4F-DB2D-CA66B6D5D8F5">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-28 09:38:21 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="denumire_categorie" id="5659BC96-FF22-2AF9-2D0C-C3D5F1404C38">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-28 09:38:52 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<constraintName>categorii_animale_den_cat_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="(length(denumire_categorie) &gt; 3 ) AND  (REGEXP_LIKE ( denumire_categorie, &apos;^[A-Za-z ]+$&apos;))"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8F7D24C2-128D-8300-3EFD-FB669D2640A0" name="tipuri_animale PK">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-28 09:39:35 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0CA94DDE-EDFD-1C4F-DB2D-CA66B6D5D8F5</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="115AB1C4-B420-DB0C-618B-91363A9F9FE8" name="cat_animale_denum_cat_un">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-09 12:27:19 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<newElementsIDs>5659BC96-FF22-2AF9-2D0C-C3D5F1404C38</newElementsIDs>
+<usedAttributes>
+<attributeRef>5659BC96-FF22-2AF9-2D0C-C3D5F1404C38</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

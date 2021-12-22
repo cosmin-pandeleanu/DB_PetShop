@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="240B5B48-5A4C-0E9F-DA15-4437BB77AF39" name="detalii_clienti">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:17:27 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nr_card" id="98A6C99C-D0E6-7B68-2D94-34D8B67A8ADE">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:18:55 UTC</createdTime>
+<generatorID>2E538EAF-C027-7780-AF15-85491C6D7EEE</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<referedAttribute>6258C8AD-8EEB-C2B7-FDBA-106F030B9F93</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="e-mail" id="67828A97-58AA-025C-617C-0A809ED80E96">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-11-18 18:35:44 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<constraintName>datelii_clienti_e-mail_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(&quot;e-mail&quot;, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_nasterii" id="4452CED0-22AD-4458-C5D7-3B3C12BAD4A4">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:20:42 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gen" id="4E52E088-B64C-0608-4D21-D20297DE42AC">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:21:40 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="adresa" id="53BD3313-9C93-22CA-C6DA-DF3B1A8877FB">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:21:19 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="oras" id="99E7E264-9CA8-AE9B-EE89-5C8802963494">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:22:24 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F9C20D1B-46E4-3EC4-61FE-AC4719BC1C30" name="detalii_clienti_e-mail_uk">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-11-18 19:16:45 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="false"/>
+</engineerTo>
+<newElementsIDs>67828A97-58AA-025C-617C-0A809ED80E96</newElementsIDs>
+<usedAttributes>
+<attributeRef>67828A97-58AA-025C-617C-0A809ED80E96</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

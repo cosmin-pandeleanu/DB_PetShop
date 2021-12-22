@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7FF02588-CEB5-7CE1-4DCF-D358D06D2C1F" containerWithKeyObject="8E127BF8-AFFC-4251-09D7-1B502D51CCB6" localFKIndex="2EB15950-0CDA-B0F9-A360-76C8BCB673E2" name="produse_tipuri_produse_FK">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>659E992F-BFD0-EFD7-D883-1070E061105B</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<referredTableLongName>tipuri_produse</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CEBE2D9C-0619-CD03-BFD6-B41293BA86F0</referredTableID>
+<keyObject>39095F4D-5D54-7CCD-E1A7-4F5A8C0D05D3</keyObject>
+<referredKeyID>39095F4D-5D54-7CCD-E1A7-4F5A8C0D05D3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tip</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

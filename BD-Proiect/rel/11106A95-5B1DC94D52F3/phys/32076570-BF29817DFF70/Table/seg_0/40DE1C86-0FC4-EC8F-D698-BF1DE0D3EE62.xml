@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="furnizori" directorySegmentName="seg_0" id="40DE1C86-0FC4-EC8F-D698-BF1DE0D3EE62">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:14:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="denumire_furnizor" id="260B10F3-E7DD-CE05-71FA-62C8C146A461">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:14:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_furnizor" id="4DDD2A58-F278-DBB0-63D4-37EFE4598EAD">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:14:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="furnizori_PK" id="115FAD6E-06AF-649D-98A9-2115F171CDB3">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:14:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="furnizori_denumire_furnizor_UN" id="D8A0F663-67CB-0881-5325-EF7F3D8F3648">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:14:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

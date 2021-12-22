@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="52083505-D242-2F91-0FB9-6E5BCB4279D5" name="clienti">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:16:16 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nr_card" id="6258C8AD-8EEB-C2B7-FDBA-106F030B9F93">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:16:36 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume_client" id="8D654E88-2E36-69C6-77F4-D49E2E8164EC">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:16:56 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<constraintName>clienti_nume_client_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="(length(nume_client) &gt; 3 ) AND  (REGEXP_LIKE ( nume_client, &apos;^[A-Za-z ]+$&apos;))"/>
+</checkConstraint>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DE365157-95ED-79D8-C2BD-58DBBECEE937" name="Clienti PK">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:16:48 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6258C8AD-8EEB-C2B7-FDBA-106F030B9F93</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="D81DEDEE-6D62-2F9D-9040-17D8D3E5ECBB" name="clienti_nume_client_uk">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-11-18 19:21:41 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="false"/>
+</engineerTo>
+<newElementsIDs>8D654E88-2E36-69C6-77F4-D49E2E8164EC</newElementsIDs>
+<usedAttributes>
+<attributeRef>8D654E88-2E36-69C6-77F4-D49E2E8164EC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

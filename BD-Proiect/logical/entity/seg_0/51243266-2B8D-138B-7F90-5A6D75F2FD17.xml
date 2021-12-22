@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="51243266-2B8D-138B-7F90-5A6D75F2FD17" name="produse">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:25:29 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_produs" id="1354CF6A-D1C1-4265-9AA5-C2760FFB4E8B">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:25:38 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="denumire_produs" id="68CA0521-DB91-D3B5-1DC0-53C87F8453E3">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:26:11 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<constraintName>produse_denumire_produs_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(denumire_produs) &gt; 2"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stoc" id="2C696EA4-3A1E-BC14-98D4-4E2A0254AA0F">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:26:41 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<constraintName>produse_stoc_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="stoc &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pret" id="40FDFC1C-62FA-2EA2-F3C6-46012FD56984">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:27:13 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<constraintName>produse_pret_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="pret &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="um" id="4826B058-6441-287E-A21B-C5D03F6B76E9">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:26:57 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<listOfValues>
+<valueDef value="L" description=""/>
+<valueDef value="buc" description=""/>
+<valueDef value="g" description=""/>
+<valueDef value="kg" description=""/>
+<valueDef value="mL" description=""/>
+</listOfValues>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_tip" id="BA904E4E-DE17-04DF-2A98-86CDFEB2F0EF">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:34:47 UTC</createdTime>
+<generatorID>659E992F-BFD0-EFD7-D883-1070E061105B</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<referedAttribute>85D3CDCF-760E-7870-78AF-C3415C9B7E0C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_furnizor" id="FBC19CFE-4F1A-A231-6E06-0E008E284AED">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 08:09:14 UTC</createdTime>
+<generatorID>0BEE9065-1D7A-3F47-4DAF-184CF00F1DD2</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="true"/>
+</engineerTo>
+<referedAttribute>CF60E512-30E1-F810-889E-997357C23FEA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3CFBE3DA-F05E-8DC5-DA68-F014C60282A2" name="Produse PK">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-10-27 15:28:29 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="11106A95-5FA9-A853-24F4-5B1DC94D52F3" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1354CF6A-D1C1-4265-9AA5-C2760FFB4E8B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

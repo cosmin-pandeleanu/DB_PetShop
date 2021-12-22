@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="tipuri_produse" directorySegmentName="seg_0" id="CEBE2D9C-0619-CD03-BFD6-B41293BA86F0">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:14:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="denumire_tip" id="7B71CEB1-44F6-EF82-F6E9-F6339D780664">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:14:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_tip" id="E24BAB0C-9597-A739-6203-4762419E223F">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:14:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="tipuri_produse_PK" id="39095F4D-5D54-7CCD-E1A7-4F5A8C0D05D3">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:14:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="tipuri_produse_denumire_tip_UN" id="93277092-D65B-6598-A52F-10F765FB6B6D">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-17 08:14:14 UTC</createdTime>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

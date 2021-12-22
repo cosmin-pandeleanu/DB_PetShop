@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BAF6D5A7-8626-2A0D-B959-70861D14F21C" name="categorii_animale">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>012FEA14-3BC7-A11B-95D3-D8F9CB64811B</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_categorie" id="194B1E54-2EAE-DFCE-73A7-5B2C2D41DF19">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>0CA94DDE-EDFD-1C4F-DB2D-CA66B6D5D8F5</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="denumire_categorie" id="993AC5AA-5E2D-F17D-148F-874AE7127BF7">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>5659BC96-FF22-2AF9-2D0C-C3D5F1404C38</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<constraintName>categorii_animale_den_cat_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="(length(denumire_categorie) &gt; 3 ) AND  (REGEXP_LIKE ( denumire_categorie, &apos;^[A-Za-z ]+$&apos;))"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="64447613-D169-8C74-24F9-459FBE7A4114" name="categorii_animale_PK">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>8F7D24C2-128D-8300-3EFD-FB669D2640A0</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="194B1E54-2EAE-DFCE-73A7-5B2C2D41DF19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5357838D-2107-8A6C-B19B-D9FA22EB7EB1" name="categorii_animale_denum_cat_UN">
+<createdBy>Cosmin</createdBy>
+<createdTime>2021-12-10 10:05:46 UTC</createdTime>
+<generatorID>115AB1C4-B420-DB0C-618B-91363A9F9FE8</generatorID>
+<ownerDesignName>BD-Proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="993AC5AA-5E2D-F17D-148F-874AE7127BF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
