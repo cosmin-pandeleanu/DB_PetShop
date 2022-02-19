@@ -124,3 +124,5 @@ FROM detalii_clienti dc, clienti c
 WHERE c.nr_card = dc.nr_card 
     AND adresa is NULL 
     AND nume_client != 'FARA CARD'
+
+
